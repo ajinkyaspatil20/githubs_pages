@@ -1,39 +1,43 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-//import homeBg from "@/assets/homeBg.jpg";
 
 function Landing() {
   return (
     <div
       className="w-full h-screen flex flex-col justify-between text-center text-white relative"
       style={{
-        backgroundColor: "#1a365d",
+        backgroundImage: "url('/githubs_pages/homebg.webp')", // Make sure this image is in your public folder
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-40 z-0"></div>{" "}
-      {/* Navbar - Fixed at the top with highest z-index */}
+      <div className="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
+
+      {/* Navbar */}
       <div className="fixed top-0 left-0 w-full z-50">
         <Navbar />
       </div>
+
       {/* Main Content */}
       <main className="flex flex-col items-center justify-center flex-grow pt-24 px-6 z-10">
-        <h1 className="text-3xl font-semibold drop-shadow-lg">CampQuest</h1>
+        <h1 className="text-3xl font-semibold drop-shadow-lg">Sahyadri Explorers!</h1>
         <p className="text-lg mt-4 max-w-2xl font-thin drop-shadow-md">
-          Welcome to CampQuest Adventures! <br />
-          Dive into the excitement and discover our diverse campgrounds. <br />
-          Don't hesitate to share your own experiences and engage with the
-          community!
+          Welcome to Sahyadri Explorers! <br />
+          From Peaks to Valleys Explore the Sahyadri Way... <br />
+          Explore the unexplored with Sahyadri Explorers. <br />
+          
         </p>
         <a
           href="/campgrounds"
           className="mt-6 px-4 text-xl py-3 bg-white text-black font-semibold rounded-lg shadow-lg hover:bg-gray-200 transition"
         >
-          View Campgrounds
+          Book Trek!
         </a>
       </main>
-      {/* Footer - Fixed at the bottom with higher z-index */}
+
+      {/* Footer */}
       <div className="fixed bottom-0 left-0 w-full z-20">
         <Footer />
       </div>
@@ -53,7 +57,7 @@ const Navbar = () => {
     <nav className="bg-transparent shadow-lg fixed w-full z-50">
       <div className="container mx-auto flex justify-between items-center px-4 py-3">
         <a className="text-2xl font-semibold tracking-wide text-white" href="/">
-          CampQuest
+          Sahyadri Explorers!
         </a>
         <button
           className="lg:hidden p-2 border-2 rounded-md text-white"
@@ -110,7 +114,7 @@ const Footer = () => {
         className="text-center p-3 text-gray-400 text-md"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        © 2025 CampQuest. All rights reserved.
+        © 2025 Sahyadri Explorers!. All rights reserved.
       </div>
     </footer>
   );
