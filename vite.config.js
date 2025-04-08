@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/github_pages/",
+  base: "/githubs_pages/",
   server: {
     headers: {
       "Permissions-Policy": "interest-cohort=()"
