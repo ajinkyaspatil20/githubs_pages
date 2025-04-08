@@ -1,0 +1,15 @@
+{
+  "short_name": "CampQuest",
+  "name": "CampQuest - Find Your Perfect Campsite",
+  "icons": [
+    {
+      "src": "CampQuest.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+}
