@@ -14,7 +14,7 @@ import EditCampground from "./Pages/EditCampground";
 function App() {
   return (
     <LoadingProvider>
-      <Router basename="/github_pages">
+      <Router basename="/githubs_pages">
         <ToastContainer position="top-right" autoClose={3000} />
         <Routes>
           <Route index path="/" element={<Landing />} />
